@@ -561,12 +561,12 @@ section {
 .portfolio-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(10, 15, 26, 0.9), transparent);
+    background: linear-gradient(to top, rgba(10, 15, 26, 0.95), transparent);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 24px;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.3s ease;
 }
 
@@ -583,6 +583,8 @@ section {
 .portfolio-overlay span {
     font-size: 0.85rem;
     color: var(--accent);
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
 
 /* ========================================
@@ -1317,5 +1319,5 @@ button:focus-visible {
     right: 20px;
     width: 55px;
     height: 55px;
-}
+    }
 }
